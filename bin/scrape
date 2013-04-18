@@ -1,6 +1,7 @@
 #!/bin/bash
 
 git clone https://github.com/cwales/cwales.github.com.git tmp/cwales
-rm -rf ./src/*
-mv tmp/cwales/SPOOL/* ./src
-rm -rf tmp/cwales
+cd tmp/cwales
+git pull origin master
+cd ../..
+cp tmp/cwales/SPOOL/* src/
