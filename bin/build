@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BUILDER="bin/builder"
+BUILDER="pcl6"
 
 echo "Building files..."
 ls src/* | while read pcl_file; do
